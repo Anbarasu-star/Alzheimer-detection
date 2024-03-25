@@ -1,1 +1,1 @@
-# Alzheimer-detection
+# Alzheimer-detection:https://mindheal.streamlit.app/
