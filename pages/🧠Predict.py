@@ -45,7 +45,7 @@ class_indices = {0: 'Mild Dementia', 1: 'Moderate Dementia',
 
 with col2:
     st.title("Discover Your Outcome")
-    file_ = st.file_uploader("Please upload the Brain X-ray image", type=['jpg','png','jpeg'])
+    file_ = st.file_uploader("Please upload the Brain MRI image", type=['jpg','png','jpeg'])
     st.markdown("""___""")
 
 
@@ -65,7 +65,7 @@ if file_ is not None:
         result = np.argmax(predictions)
         probablity=np.max(predictions)
         st.success(
-            f"Based on provide X-ray ,it seems to be {round(probablity*100,2)} % {class_indices[int(result)]}")
+            f"Based on provide MRI ,it seems to be {round(probablity*100,2)} % {class_indices[int(result)]}")
 
 else:
     st.text(" ")

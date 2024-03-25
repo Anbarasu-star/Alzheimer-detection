@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
 
-st.set_page_config("Alzheimer's Detection",page_icon="🧠",layout='wide',initial_sidebar_state='collapsed')
+st.set_page_config("MIND HEAL Detection",page_icon="🧠",layout='wide',initial_sidebar_state='collapsed')
 video_html = """
 <style>
 [data-testid="stHeader"]{
@@ -23,20 +23,18 @@ with st.sidebar:
     lottie_json = load_lottie()
     st_lottie = st_lottie(lottie_json,speed=2,loop=True,quality="high",height=300, width=300)
 
-st.title("Detecting Alzheimer's through the lens of Convolutional Neural Networks 🔍")
+st.title("Welcome to MIND HEAL! 🔍")
 
-st.info("Embark on an exciting journey of Alzheimer's detection with our cutting-edge deep learning model! 🚀🧠 By using advanced technology to analyze X-ray brain images, our groundbreaking solution accurately predicts the severity of the disease. It categorizes Alzheimer's into different levels: mild, moderate, very mild, and non-dementia. With an impressive accuracy rate of 96%, our model paves the way for early intervention and personalized care..")
+st.info("Dementia prediction 🧠 By using advanced technology to analyze MRI brain images, our groundbreaking solution accurately predicts the severity of the disease. It categorizes Alzheimer's into different levels: mild, moderate, very mild, and non-dementia. With an impressive accuracy rate , our model paves the way for early intervention and personalize care..")
 
-st.subheader("Description about Alzheimer")
+st.subheader("What is Dementia ?")
 
-st.write("""Alzheimer's disease is a progressive neurological disorder that affects the brain, primarily causing memory loss and cognitive decline. It is the most common form of dementia, accounting for around **60-80%** of dementia cases. 
+st.write(""" 
+Dementia is a term for several diseases that affect memory, thinking, and the ability to perform daily activities. The illness gets worse over time. It mainly affects older people but not all people will get it as they age. Dementia is a syndrome that can be caused by a number of diseases which over time destroy nerve cells and damage the brain, typically leading to deterioration in cognitive function (i.e. the ability to process thought) beyond what might be expected from the usual consequences of biological ageing According to papers from Lancet neurology, even the old theory such as neural inflations, which was disregarded as the cause compared to tau-protein, beta-amyloids, and genetic factors. The World Health Organization Trusted Source says that 47.5 million people around the world are living with dementia. The National Institutes of Health estimate that more than 5 million people in the United States have Alzheimer’s disease. Although younger people can and do get Alzheimer's, the symptoms generally begin after age 60. There are degrees of severity in Alzheimer.
 
-The disease is characterized by the presence of abnormal protein deposits, known as plaques and tangles, in the brain. These plaques are made up of beta-amyloid protein, while tangles consist of twisted strands of tau protein. Over time, these plaques and tangles disrupt the normal functioning of brain cells and lead to their gradual degeneration and death.
+Very mildly demented: This is the stage where patient starts to forget where they put their stuff, other people's names recently, etc. It is hard to detect through cognitive ability test.
 
-The symptoms of Alzheimer's disease typically start with mild memory loss and confusion, which gradually worsen over time. Other common symptoms include difficulty in language and communication, impaired judgment, disorientation, mood and personality changes, and challenges with problem-solving and performing daily tasks.
+Mildly demented: This is the stage where patients don't remember the words, can't find their way to the destination, loss of focus and work-abilities. This is also the stage where patients even forget that they are losing memory. From this stage, with cognitive testing, it can be found.
 
-As Alzheimer's disease progresses, individuals may experience severe memory loss, lose the ability to recognize loved ones, and require round-the-clock care. The exact cause of Alzheimer's is not yet fully understood, but age, genetics, and certain lifestyle factors are believed to play a role in its development.
-
-Currently, there is no cure for Alzheimer's disease. However, there are medications available that can temporarily alleviate symptoms and improve quality of life for some individuals. Non-pharmacological approaches, such as cognitive stimulation, physical exercise, and social engagement, may also have a positive impact on managing the symptoms and slowing down the progression of the disease.
-
-Alzheimer's disease poses significant challenges for individuals affected by it and their families. It is crucial to raise awareness, promote early detection, and support ongoing research to develop effective treatments and, ultimately, find a cure for this devastating condition.""")
+Moderately demented: Starts to forget the recent activities, important old histories, have hard time calculating the budget, hard to go outside alone, and loss of empathy.
+There are 3 more stages in the moderately dementia, which in the terminal stage, the patient can't move on their own, while they lose the ability to speak. Knowing these stages are important because the faster the stage the patient is at, the treatment will have higher effect in terms of slowing the process. If the dementia is found during the moderately demented stage, it is known that the patient will pass away in 3 years. Thus, having an AI that detects alzheimer dementia in the early stage can allow longer life expectancy from the patient as well as higher life quality overall from the slowdown of dementia. As Alzheimer can not only be found with cognitive ability testing, but also through MRI or CT by looking at the ventricles of the brain and cortical atrophy, the theoretical foundation on this project is solid. Doctors find the patient with Alzheimer's have a brain that have enlarged ventricles (that lies in the center of the brain) as well as thinner cortical grey area of the brain.""")
